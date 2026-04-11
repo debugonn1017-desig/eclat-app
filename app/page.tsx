@@ -156,7 +156,7 @@ export default function CustomerListPage() {
           }
 
           // 同期待値内: 温度感
-          const trendValue = { 上習: 3, 停滞: 2, 下降: 1 };
+          const trendValue = { 上昇: 3, 停滞: 2, 下降: 1 };
           if (trendValue[a.trend] !== trendValue[b.trend]) {
             return (trendValue[b.trend] || 0) - (trendValue[a.trend] || 0);
           }
